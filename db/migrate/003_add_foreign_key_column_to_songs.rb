@@ -1,2 +1,4 @@
 class AddForeignKeyColumnToSongs < ActiveRecord::Migration
-end 
+  def change
+    add_column :songs, :artist_id, :integer
+end
